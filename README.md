@@ -1,4 +1,4 @@
-# Toolkit
+# Toolkits
 A diverse set of functions for fast-prototyping or understanding concepts
 
 ## Folder "Tensorflow"

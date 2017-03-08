@@ -7,7 +7,7 @@ root_dir = './data/docxs'
 target_dir = './data/txt_docx'
 
 
-f = open('docx_issues.txt','w')
+
 for subdir, dirs, files in os.walk(root_dir):
     dir_str = str.split(subdir,'/')
     for file in files:
@@ -37,7 +37,9 @@ for subdir, dirs, files in os.walk(root_dir):
             f.close()               
             print("File processed " + str(txt_name))
         except: 
-            f.write(filename + '\n')          
+            f = open('docx_issues.txt','w')
+            f.write(filename + '\n')      
+            f.close()     
             pass
 
-f.close()    
+   

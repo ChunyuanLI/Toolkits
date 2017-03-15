@@ -17,6 +17,7 @@
       It will convert xls files in 'xls' to txt in 'txt_xls'
       
 ## Unsupervised text summarization based word2vec   
-  1. Download
+  1. Download the word2vec vectors (i.e. GoogleNews-vectors-negative300.bin file) from https://code.google.com/p/word2vec/. Put this binary file into the current directory.
   2. Run 'batch_summarize_word2vec'
+  
         It will summarize each txt in 'txt_summ/txt_all' to as short text in a pre-defined-size window

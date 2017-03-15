@@ -18,7 +18,7 @@
       
 ## Unsupervised text summarization based word2vec   
   Idea: (1) Construct a vocabulary: Collect all the words and remove the stopwords; (2) Construct the vector representations from Google's word2vec for the words in this vocabulary, to speed up next step.
-  (3) Compute the mean \mu of word2vec for one entire document.
+  (3) Compute the mean mu of word2vec for one entire document. Obtain the "sentences" of the document with a sliding window, and compute the mean of word2vec for each sentence. The summarization is considered as the sentence whose word2vec mean is closest to the entire document.
 
   1. Download the word2vec vectors (i.e. GoogleNews-vectors-negative300.bin file) from https://code.google.com/p/word2vec/. Put this binary file into the current directory.
   2. Run 'batch_summarize_word2vec'

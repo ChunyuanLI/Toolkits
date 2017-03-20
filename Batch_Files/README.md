@@ -15,7 +15,16 @@
   2. Run 'batch_proc_xls.py'
   
       It will convert xls files in 'xls' to txt in 'txt_xls'
+
+## Load and save 3D views as images
+
+  1. Install the package "cv2"
+  
+  2. Run '3D_views.py'
+      It will load 3D models in 'cars', and save their selected views as images in 'cars_views'
       
+      <img src="data/cars_views/full_views.jpg" width="600px">
+
 ## Unsupervised text summarization based on word2vec    
   Idea: (1) Construct a vocabulary: Collect all the words and remove the stopwords; (2) Construct the vector representations from Google's word2vec for the words in this vocabulary, to speed up next step.
   (3) Compute the mean mu of word2vec for one entire document. Obtain the "sentences" of the document with a sliding window, and compute the mean of word2vec for each sentence. The summarization is considered as the sentence whose word2vec mean is closest to the entire document.
